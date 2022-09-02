@@ -1,0 +1,16 @@
+.buttonContainer {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  button {
+    width: 100px;
+    height: 30px;
+  }
+  .negative {
+    background-color: red;
+  }
+  .positive {
+    background-color: green;
+  }
+}

@@ -1,0 +1,17 @@
+<div [class]="'table tableHeader'">
+  <p>No.</p>
+  <p>Name</p>
+  <p>Surname</p>
+</div>
+
+<div *ngFor="let user of users; let i = index" class="table">
+  <p>{{ i + 1 }}</p>
+  <p>{{ user.name }}</p>
+  <p>{{ user.surname }}</p>
+  <button (click)="editUser(user)">edit</button>
+  <button (click)="deleteUser(user)">delete</button>
+</div>
+
+<div>
+  <button (click)="addUser()">Add</button>
+</div>

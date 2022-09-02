@@ -1,0 +1,19 @@
+.tableHeader {
+  background-color: rgb(185, 185, 185);
+  width: 700px;
+}
+
+.table {
+  padding-left: 20px;
+  display: flex;
+  column-gap: 100px;
+  align-items: center;
+  p {
+    width: 50px;
+    margin: 0;
+  }
+  button {
+    width: 70px;
+    height: 30px;
+  }
+}
