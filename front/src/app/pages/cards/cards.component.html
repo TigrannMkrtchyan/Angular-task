@@ -1,0 +1,11 @@
+<div>
+  <button (click)="addCard()">add</button>
+  <button (click)="sortCards()">sort</button>
+</div>
+
+<div class="cardContainer">
+  <div *ngFor="let card of cards" class="card">
+    <div class="close" (click)="deleteCard(card._id)">X</div>
+    <p>{{ card.number }}</p>
+  </div>
+</div>

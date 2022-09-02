@@ -1,0 +1,19 @@
+<div class="header">
+  <div *ngIf="data; else elseBlock">Edit user</div>
+  <ng-template #elseBlock>Add User.</ng-template>
+</div>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <div class="userForm">
+    <div>
+      <label for="name"> Name: </label>
+      <input id="name" type="text" formControlName="name" />
+    </div>
+    <div>
+      <label for="surname">Last Name: </label>
+      <input id="surname" type="text" formControlName="surname" />
+    </div>
+  </div>
+  <div class="submitButton">
+    <button type="header" [disabled]="!userForm.valid">Submit</button>
+  </div>
+</form>
